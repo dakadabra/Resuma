@@ -19,7 +19,8 @@ function computeScore(linkedinData,githubData,projectsData,skillsData,coursesDat
 	scoreMap.forEach(function(value,item){
 		finalScore+=value;
 	});
-	return [(finalScore/scoreMap.size).toFixed(2),scoreMap];
+	
+	return [Number((finalScore/scoreMap.size).toFixed(2)),scoreMap];
 }
 function linkedinScore(input){
 
@@ -72,7 +73,7 @@ function skillsScore(input){
 		skillsScoreMap.set(item,Math.min(1,(skillsScoreMap.get(item)/skillsScoreIdealMap.get(item)).toFixed(2)));
 		skillScore+=skillsScoreMap.get(item);
 	});
-	return  (skillScore/skillsScoreMap.size).toFixed(2);
+	return  Number((skillScore/skillsScoreMap.size).toFixed(2));
 }
 function coursesScore(input){
 	//Ideal expectations
