@@ -111,14 +111,14 @@ function skillScore(input){
 function coursesScore(input){
   if (input == "") count = 0;
   else count = input.split(/\r\n|\r|\n/).length;
-  var coursesIdealNumber=15; //Ideal expectations
+  var coursesIdealNumber=4; //Ideal expectations
   return Math.min(100,((count*100)/coursesIdealNumber).toFixed(2));
 }
 
 function hobbiesScore(input){
   if (input == "") count = 0;
   else count = input.split(/\r\n|\r|\n/).length;
-  var interestsIdealNumber=4; //Ideal expectations
+  var interestsIdealNumber=3; //Ideal expectations
   return Math.min(100,((count * 100)/interestsIdealNumber).toFixed(2));
 }
 
