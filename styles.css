@@ -19,6 +19,19 @@ height:100vh;
   clear: both;
 }
 
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+	border-radius: 4px;}
+}
+
 form{
 	width:240px;
 	text-align: center;
@@ -26,7 +39,8 @@ form{
 
 }
 input{
-	width:240px;
+	width: 300px;
+	height: 50px;
 	text-align: center;
 	background:#ecf0f1;
 	border:2px solid transparent;
@@ -35,6 +49,34 @@ input{
 	font-weight: 200;
 	padding:10px 0;
 	transition:border .5s;
+}
+textarea{
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	background:#ecf0f1;
+	border:2px solid transparent;
+	border-radius:3px;
+	font-size:16px;
+	font-weight: 200;
+	padding:10px 0;
+	transition:border .5s;
+}
+.small_req{
+	width: 300px;
+	/* height: 40px; */
+  padding: 15px 5;
+	text-align: center;
+	background: rgb(237,240,241);
+	border-radius: 3px;
+}
+.big_req{
+	width: 300px;
+	/* height: 100px; */
+  padding: 40px 5;
+	text-align: center;
+	background: rgb(237,240,241);
+	border-radius: 3px;
 }
 input[type=submit]{
 	border:2px solid transparent;
