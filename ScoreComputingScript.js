@@ -1,4 +1,10 @@
 function computeScore(linkedinData,githubData,projectsData,skillsData,coursesData,interestData,experiencesData){
+	//convert data to array
+	projectsData=convertDataToArray(projectsData);
+	skillsData=convertDataToArray(skillsData);
+	coursesData=convertDataToArray(coursesData);
+	interestData=convertDataToArray(coursesData);
+	experiencesData=convertDataToArray(experiencesData);
 	var scoreMap=new Map([["Linkedin",0],["Github",0],["Projects",0],["Skills",0],["Courses",0],["Interests",0],["Experiences",0]]);
 	//Lindedin
 	scoreMap.set("Linkedin",linkedinScore(linkedinData));
@@ -95,6 +101,10 @@ function experiencesScore(input){
 	var experiencesIdealNumber=2;
    return Math.min(1,(input.length/experiencesIdealNumber).toFixed(2));
 }
-console.log(computeScore("https://www.linkedin.com/in/fatou-toure-mayer-61b2b417/?originalSubdomain=ca","https://github.com/dakadabra/Resumabuilder",["Hello","sALUT"],["Github","JavaScript","AWS","Python","Linux","Go","Docker","Gradle","Kubernetes",],["COURS1","COURS2","COURS3","COURS4"],["Music","Dancing","Sing"],["exp1","exp2","exp3"]));
-
-
+function convertDataToArray(input){
+	if(input === null || input.match(/^ *$/) !== null){
+		return [];
+	}
+	return input.split("\n");
+}
+//console.log(computeScore("https://www.linkedin.com/in/fatou-toure-mayer-61b2b417/?originalSubdomain=ca","https://github.com/dakadabra/Resumabuilder",["Hello","sALUT"],["Github","JavaScript","AWS","Python","Linux","Go","Docker","Gradle","Kubernetes",],["COURS1","COURS2","COURS3","COURS4"],["Music","Dancing","Sing"],["exp1","exp2","exp3"]));
