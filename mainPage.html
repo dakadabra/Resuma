@@ -12,27 +12,62 @@
     <li><a href="index.html">REGISTER</a></li>
   </ul>
   <br>
+  <h1 class="logo">Resumabuilder</h1>
   <center>
-    <h2>Main Page</h2>
     <br><br>
+    <h1>Total Progress</h1> <br>
+  </center>
+    <div id="totalProgress" class="currProgressTotal">
+      <div id="totalBar" class="progressBarTotal"></div>
+    </div> <br><br><br><br>
 
+  <br><br>
     <div class="row">
+      <center>
       <div class="column">
         <h2>Your Current Accomplishments</h2>
         <br>
-        <input type="url" name="linkedIn" placeholder ="Enter your LinkedIn"> <br><br><br>
-        <input type="url" name="gitHub" placeholder ="Enter your GitHub"> <br><br><br>
-        <input type="url" name="website" placeholder ="Enter your personal website"> <br><br><br>
-        <textarea rows="2" cols="30" name="projects" placeholder ="Enter your projects" wrap="hard"></textarea> <br><br><br>
-        <textarea rows="2" cols="20" name="experience" placeholder ="Enter your work experience" wrap="hard"></textarea> <br><br><br>
-        <textarea rows="2" cols="20" name="skills" placeholder ="Enter your relevant skills" wrap="hard"></textarea> <br><br><br>
-        <textarea rows="2" cols="20" name="courses" placeholder ="Enter your relevant courses" wrap="hard"></textarea> <br><br><br>
-        <textarea rows="2" cols="20" name="hobbies" placeholder ="Enter your hobbies/interests" wrap="hard"></textarea> <br><br><br>
+        <input type="url" id="linkedIn" placeholder ="Enter your LinkedIn"> <br><br><br>
+        <input type="url" id="gitHub" placeholder ="Enter your GitHub"> <br><br><br>
+        <input type="url" id="website" placeholder ="Enter your personal website"> <br><br><br>
+        <textarea rows="2" cols="30" id="projects" placeholder ="Enter your projects" wrap="hard"></textarea> <br><br><br>
+        <textarea rows="2" cols="20" id="experience" placeholder ="Enter your work experience" wrap="hard"></textarea> <br><br><br>
+        <textarea rows="2" cols="20" id="skills" placeholder ="Enter your relevant skills" wrap="hard"></textarea> <br><br><br>
+        <textarea rows="2" cols="20" id="courses" placeholder ="Enter your relevant courses" wrap="hard"></textarea> <br><br><br>
+        <textarea rows="2" cols="20" id="hobbies" placeholder ="Enter your hobbies/interests" wrap="hard"></textarea> <br><br><br>
       </div>
+      </center>
       <div class="column">
-        <h2>Progress</h2>
-        <p>Some text..</p>
+        <center><h2>Progress</h2><br></center>
+        <div id="linkedInProgress" class="currProgress">
+          <div id="linkedInBar" class="progressBarSmall"></div>
+        </div> <br><br>
+        <div id="gitHubProgress" class="currProgress">
+          <div id="gitHubBar" class="progressBarSmall"></div>
+        </div> <br><br>
+        <div id="websiteProgress" class="currProgress">
+          <div id="websiteBar" class="progressBarSmall"></div>
+        </div> <br><br><br><br>
+        <div id="projectsProgress" class="currProgress">
+          <div id="projectsBar" class="progressBarSmall"></div>
+        </div> <br><br><br><br>
+        <div id="experienceProgress" class="currProgress">
+          <div id="experienceBar" class="progressBarSmall"></div>
+        </div> <br><br><br><br>
+        <div id="skillsProgress" class="currProgress">
+          <div id="skillsBar" class="progressBarSmall"></div>
+        </div> <br><br><br><br><br>
+        <div id="coursesProgress" class="currProgress">
+          <div id="coursesBar" class="progressBarSmall"></div>
+        </div> <br><br><br><br>
+        <div id="hobbiesProgress" class="currProgress">
+          <div id="hobbiesBar" class="progressBarSmall"></div>
+        </div>
+        <br><br><br><br>
+        <center><button type="button" class="button" name="progress" onclick="updateProgress()">Calculate my progress!</button></center>
+        <br><br>
       </div>
+      <center>
       <div class="column">
         <h2>The Goal Resume</h2>
         <br>
@@ -45,9 +80,7 @@
         <div class="big_req">Atleast 4</div> <br><br>
         <div class="big_req">Atleast 3</div> <br><br>
       </div>
-      <button type="button" class="button" name="progress">Calculate my progress!</button>
+      <script src="input.js"></script>
+      </center>
     </div>
-    <br><br><br>
-
-  </center>
 </body>

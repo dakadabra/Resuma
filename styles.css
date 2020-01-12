@@ -6,6 +6,11 @@ background: linear-gradient(135deg,rgb(253,200,48) 0%, rgba(243,115,53) 100%);
 height:100vh;
 }
 
+.logo {
+	padding-left: 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
 .column {
   float: left;
   width: 33.33%;
@@ -67,7 +72,7 @@ textarea{
 	/* height: 40px; */
   padding: 15px 5;
 	text-align: center;
-	background: rgb(237,240,241);
+	background: rgb(189,189,189);
 	border-radius: 3px;
 }
 .big_req{
@@ -75,9 +80,33 @@ textarea{
 	/* height: 100px; */
   padding: 40px 5;
 	text-align: center;
-	background: rgb(237,240,241);
+	background: rgb(189,189,189);
 	border-radius: 3px;
 }
+.currProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progressBarSmall {
+  width: 1%;
+  height: 50px;
+  background-color: #4CAF50;
+}
+
+.currProgressTotal {
+	position: absolute;
+	left: 25%;
+  width: 50%;
+  background-color: #ddd;
+}
+
+.progressBarTotal {
+  width: 1%;
+  height: 70px;
+  background-color: #4CAF50;
+}
+
 input[type=submit]{
 	border:2px solid transparent;
 	background:#3498db;
