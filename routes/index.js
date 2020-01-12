@@ -1,17 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const app = express();
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // Welcome Page
-router.get('/', forwardAuthenticated, (req, res) => res.sendFile('/mainPage.html'));
+router.get('/', forwardAuthenticated, (req, res) => res.sendFile(path.join(__dirname, '../views', '.html')));
 
 // Dashboard
 router.get('/', ensureAuthenticated, (req, res) =>
-  res.sendFile('/mainPage.html' , {
+  res.sendFile(path.join(__dirname, '../views', '.html'), {
     user: req.user
-  }));
-
+  })
+);
 
 module.exports = router;
