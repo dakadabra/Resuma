@@ -122,6 +122,6 @@ function hobbiesScore(input){
   return Math.min(100,((count * 100)/interestsIdealNumber).toFixed(2));
 }
 
-function computeScore(linkedinData,githubData,projectsData,skillsData,coursesData,interestData,experiencesData){
-  return (linkedinData + githubData + projectsData + skillsData + coursesData + interestData + experiencesData)/8
+function computeScore(linkedinData,githubData,websiteData,projectsData,skillsData,coursesData,interestData,experiencesData){
+  return (linkedinData + githubData + websiteData + projectsData + skillsData + coursesData + interestData + experiencesData)/8
 }
