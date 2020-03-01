@@ -37,6 +37,19 @@ height:100vh;
 	border-radius: 4px;}
 }
 
+.button2 {
+  background-color: #ecf0f1;
+  border: none;
+  color: white;
+  padding: 45px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+	border-radius: 4px;}
+}
+
 form{
 	width:240px;
 	text-align: center;
